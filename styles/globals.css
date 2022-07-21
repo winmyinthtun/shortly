@@ -1,3 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.nav-link {
+  @apply text-gray-400 font-medium hover:text-gray-900 text-base  px-3 py-2 rounded-md;
+}
+
+.nav-btn,
+.btn {
+  @apply flex-shrink-0 px-6 py-2 text-base font-medium text-white bg-cyan-500 rounded-full shadow-md hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-cyan-200;
+}
+
+.short-btn {
+  @apply w-full px-8 py-4 text-xl text-white rounded-lg bg-cyan-400  dark:text-cyan-400 hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-cyan-200;
+}
+
+.mobile-nav-link {
+  @apply text-gray-800  block px-3 py-2 rounded-md text-base font-medium;
+}
+
+.hero-bg {
+  @apply bg-[url('/images/illustration-working.svg')] bg-no-repeat bg-right-center relative;
+}
+
+.bg-search-box {
+  @apply bg-[url('/images/bg-shorten-desktop.svg')] bg-no-repeat bg-cover w-full bg-[#3a3053] rounded-xl relative;
+}
+
+.search-box {
+  @apply p-8 lg:p-16 mb-6;
+}
+
+.short-input {
+  @apply shadow-sm bg-gray-50 border-2 border-red-500 text-gray-600 text-xl rounded-lg focus:ring-cyan-500 focus:border-cyan-400 block w-full px-8 py-4;
+}
+
+.-up {
+  @apply relative -top-24;
+}
+
+.call-to-action {
+  @apply bg-[url('/images/bg-boost-mobile.svg')]  sm:bg-[url('/images/bg-boost-desktop.svg')] bg-no-repeat bg-cover w-full bg-[#3a3053] relative;
+}
