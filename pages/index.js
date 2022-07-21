@@ -7,7 +7,7 @@ import Statistics from "../components/Statistics";
 
 export default function Home() {
   return (
-    <Layout title="Home">
+    <Layout title="Shortly">
       <Hero />
       <div className=" bg-slate-100 mt-32 lg:mt-40">
         <div className="max-w-6xl mx-auto">
