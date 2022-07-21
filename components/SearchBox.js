@@ -27,14 +27,12 @@ const SearchBox = () => {
             `${process.env.API_URL}/shorten?url=${data.link}`
           );
           const res = await req.json();
-          console.log(res);
           const resultList = [...data.result];
           res.result.copied = false;
           resultList.push(res.result);
           setTimeout(() => {
             setData({ ...data, link: "", result: resultList, error: false });
           }, 100);
-          console.log(resultList);
         } catch (error) {
           setError(true);
           console.log("Fetch error: ", error);
@@ -50,7 +48,6 @@ const SearchBox = () => {
   const setCopied = (i) => {
     const lastData = [...data.result];
     lastData[i].copied = true;
-    console.log(lastData, i);
     setData({ ...data, result: lastData });
   };
 
