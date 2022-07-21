@@ -25,22 +25,24 @@ const SearchBox = () => {
         </div>
       </div>
 
-      <div className="grid gap-5 -up">
+      <div className="grid gap-2 -up">
         {[1, 2, 3].map((i) => (
           <div
             key={i}
             className="flex flex-col lg:flex-row space-y-4 lg:space-x-6 items-normal lg:items-baseline bg-white rounded-lg py-4 lg:py-0 shadow-sm">
-            <div className="lg:basis-4/5">
-              <p className="lg:text-xl text-gray-700 truncate px-4 lg:px-8">
-                http://example.com/adsfadf/asdf/asdfsf
+            <div className="lg:basis-1/2">
+              <p className="lg:text-xl text-gray-700 lg:pb-4 px-4 lg:px-8">
+                http://example.com/adsfadf/asdf
               </p>
               <div className="block lg:hidden border-b-[1px] pb-4" />
             </div>
 
-            <div className="lg:basis-64 px-4 lg:px-8">
-              <p className="lg:text-xl text-cyan-500">http://rel.ink/gXopOwf</p>
+            <div className="lg:basis-2/5 lg:px-8 px-4">
+              <p className="lg:text-xl text-cyan-500 lg:pb-4 lg:text-right">
+                http://rel.ink/gXopOwf
+              </p>
             </div>
-            <div className="lg:basis-16 px-4 lg:px-8">
+            <div className="lg:basis-auto px-4 lg:px-8">
               <button
                 type="button"
                 className={`btn !rounded-lg !px-14 !py-3 !text-sm !w-full !lg:w-auto lg:mb-4 ${
